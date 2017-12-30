@@ -244,7 +244,7 @@ void round_robin(){
                     }
         _time += exe;
     }
-    while ( (!FIFO.empty()) || (!arr_time[0].empty()) );
+    while ( (!FIFO.empty()) || (!arr_time[0].empty()) || (!io[0].empty()) || (!io[1].empty()) || (!io[2].empty()) );
 }
 
 int main(int argc, const char * argv[]) {
