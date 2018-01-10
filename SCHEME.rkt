@@ -1,4 +1,5 @@
 #lang scheme
+; basic card game in scheme
 ;compiling: yes
 ;complete: yes
 ;2015400213
