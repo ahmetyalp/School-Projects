@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+#This program finds duplicate folders or files
 import sys
 import argparse
 import subprocess
