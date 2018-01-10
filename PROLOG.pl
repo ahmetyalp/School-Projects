@@ -1,3 +1,4 @@
+% Class scheduler prolog program 
 :-dynamic student/2.
 :-dynamic available_slots/1.
 :-dynamic room_capacity/2.
