@@ -1,0 +1,32 @@
+<h2>Hello {{ username }}</h2>
+<form method="post">
+  {% csrf_token %}
+  {% if admin == 1 %}
+  <p>
+  <button type="submit" name="_addPM">Add Project Manager</button>
+  <button type="submit" name="_editPM">Edit Project Manager</button>
+  <button type="submit" name="_delPM">Delete Project Manager</button>
+  <p>
+  <p>
+  <button type="submit" name="_addPR">Add Project</button>
+  <button type="submit" name="_editPR">Edit Project</button>
+  <button type="submit" name="_delPR">Delete Project</button>
+  <p>
+  <p>
+  <button type="submit" name="_addE">Add Employee</button>
+  <button type="submit" name="_editE">Edit Employee</button>
+  <button type="submit" name="_delE">Delete Employee</button>
+  <button type="submit" name="_listEmp">List All Employees</button>
+  <p>
+  {% else %}
+  <p>
+  <button type="submit" name="_addT">Add Task</button>
+  <button type="submit" name="_editT">Edit Task</button>
+  <button type="submit" name="_delT">Delete Task</button>
+  <button type="submit" name="_assignTask">Assign Task to Employee</button>
+  <button type="submit" name="_listTask"> List Tasks</button>
+  <p>
+  {% endif %}
+  <p><button type="submit" name="_listprojects">List Projects</button><p>
+  <p><button type="submit" name="_logout">Logout</button><p>
+</form>
